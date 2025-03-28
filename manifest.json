@@ -1,0 +1,19 @@
+{
+    "name": "copy_shortcut",
+    "description": "ショートカットコマンド（Ctrl + Command + C）で現在のページのURLをコピーする機能です",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "permissions": [
+        "clipboardWrite"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "js/content_script.js"
+            ]
+        }
+    ]
+}
